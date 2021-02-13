@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.6,<=3.8
   run:
-    - numpy >=1.9.2
+    - numpy >=1.16
     - python >=3.6,<=3.8
 
 test:
