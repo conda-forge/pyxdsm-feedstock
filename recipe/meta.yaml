@@ -1,5 +1,5 @@
-{% set name = "pyxdsm" %}
-{% set version = "2.2.0" %}
+{% set name = "pyXDSM" %}
+{% set version = "2.2.1" %}
 
 
 package:
@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyXDSM-{{ version }}.tar.gz
-  sha256: b3460511cf2940d3bdc8b3f7cc66955ad7ac738a0746bff8464af9c87217c456
+  url: https://github.com/mdolab/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 8ec265114dd40ee74c9a3922406b84aec7ab59f78aa819b2a800038a19167f12
 
 build:
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
     - pip
-    - python >=3.6,<=3.8
+    - python
   run:
     - numpy >=1.16
-    - python >=3.6,<=3.8
+    - python
 
 test:
   imports:
