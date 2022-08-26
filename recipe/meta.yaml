@@ -1,5 +1,5 @@
 {% set name = "pyXDSM" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mdolab/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8ec265114dd40ee74c9a3922406b84aec7ab59f78aa819b2a800038a19167f12
+  sha256: 64e4966265eeb892dd9e05010f9b1b96389cbe335fbeb5f427a310257f9b1ef6
 
 build:
   number: 0
