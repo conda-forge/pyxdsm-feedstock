@@ -13,16 +13,16 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  skip: true  # [py<312]
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python
     - setuptools
   run:
     - numpy >=1.25
-    - python >={{ python_min }}
+    - python
 
 test:
   imports:
