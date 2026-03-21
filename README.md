@@ -144,6 +144,3 @@ Feedstock Maintainers
 
 * [@AntoineD](https://github.com/AntoineD/)
 
-
-<!-- dummy commit to enable rerendering -->
-
