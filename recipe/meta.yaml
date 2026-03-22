@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python 3.11
     - setuptools
   run:
     - numpy >=1.25
-    - python
+    - python 3.11
 
 test:
   imports:
