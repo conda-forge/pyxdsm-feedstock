@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - numpy >=1.25
-    - python 3.11
+    - python
 
 test:
   imports:
@@ -31,7 +31,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python
 
 about:
   home: https://github.com/mdolab/pyXDSM
